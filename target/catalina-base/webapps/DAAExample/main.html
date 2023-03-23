@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DAA Example</title>
+	<link rel="stylesheet" href="css/main.css">	
+</head>
+<body>
+	<header>
+		<div id="navbar">
+			<ul>
+				<li><a id="home">DAA Example</a></li>
+				<li><a id="personas">Personas</a></li>
+				<li><a id="mascotas">Mascotas</a></li>
+				<a id="logout">Cerrar sesion</a>
+			</ul>
+		</div>
+	</header>
+
+	<div class="container">
+		<div id="pets-container">
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/dao/people.js"></script>
+	<script type="text/javascript" src="js/dao/pets.js"></script>
+	<script type="text/javascript" src="js/view/pets.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript">
+	$(document).ready(
+		function() {
+
+			$('#logout').click(function(event) {
+				event.preventDefault();
+				doLogout();
+		    });
+
+			
+		    var view = new PetsView(new PetsDAO(), new PeopleDAO(),
+		    	'pets-container', 'pets-container'
+	    	);
+
+		    view.init();
+		});
+    </script>
+	
+</body>
+</html>

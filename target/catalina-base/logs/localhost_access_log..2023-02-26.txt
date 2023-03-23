@@ -1,0 +1,7 @@
+127.0.0.1 - - [26/Feb/2023:23:24:34 +0100] "GET /cargocpc/index.html HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:23:24:41 +0100] "GET /DAAExample/main.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - admin [26/Feb/2023:23:24:42 +0100] "GET /DAAExample/rest/people/ HTTP/1.1" 500 12110
+0:0:0:0:0:0:0:1 - - [26/Feb/2023:23:24:42 +0100] "GET /DAAExample/main.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - admin [26/Feb/2023:23:24:42 +0100] "GET /DAAExample/rest/people/ HTTP/1.1" 200 180
+0:0:0:0:0:0:0:1 - admin [26/Feb/2023:23:24:43 +0100] "GET /DAAExample/rest/people/ HTTP/1.1" 200 180
+0:0:0:0:0:0:0:1 - admin [26/Feb/2023:23:24:43 +0100] "GET /DAAExample/rest/pets/ HTTP/1.1" 200 275
